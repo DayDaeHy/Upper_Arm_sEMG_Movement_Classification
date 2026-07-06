@@ -111,7 +111,7 @@ If you use this dataset or repository in your research, please cite the related 
 
 This dataset is provided for research and educational purposes only.
 
-Redistribution or commercial use of the data without permission from the authors is prohibited.
+Please see the [LICENSE](LICENSE) file for details.
 
 ---
 
