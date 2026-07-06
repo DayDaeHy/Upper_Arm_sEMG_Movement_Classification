@@ -1,77 +1,133 @@
 # Hand_Gesture_Classification
 
-This repository contains the dataset used in the study:
+## Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals
 
-**Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals**
+**Daehui Kim¹, Junghun Kim²,*, Sang-Il Choi²,***
+
+¹ Department of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
+² School of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
+
+*Corresponding authors: fainal2@cu.ac.kr; sangilchoi@cu.ac.kr*
+
+---
 
 ## Overview
 
-This dataset was collected to evaluate the feasibility of classifying various upper limb movements using five-channel upper-arm surface electromyography (sEMG) signals.
+This repository provides upper-arm surface electromyography (sEMG) data collected during various upper limb movements.
 
-The sEMG signals were measured from five upper-arm muscles:
+The dataset was constructed to evaluate the feasibility of classifying elbow, forearm, wrist, and hand movements using only multichannel upper-arm sEMG signals.
 
-- Biceps brachii long head
-- Biceps brachii short head
-- Triceps brachii long head
-- Triceps brachii lateral head
-- Brachialis
+---
 
-The dataset includes recordings collected under two posture conditions:
+## Dataset Description
 
-- Static condition: movements were performed with the elbow supported.
-- Free condition  : movements were performed without elbow support.
+sEMG signals were recorded from five upper-arm muscle sites:
 
-## Movements
+| Channel | Muscle |
+|---|---|
+| CH1 | Biceps brachii long head |
+| CH2 | Biceps brachii short head |
+| CH3 | Triceps brachii long head |
+| CH4 | Triceps brachii lateral head |
+| CH5 | Brachialis |
 
-Eight upper limb movements were included in this dataset:
+The signals were collected at a sampling frequency of **1000 Hz**.
 
-- Elbow flexion (EF)
-- Elbow extension (EE)
-- Forearm pronation (PRO)
-- Forearm supination (SUP)
-- Wrist flexion (WF)
-- Wrist extension (WE)
-- Hand open (OH)
-- Hand close (CH)
+The experiment included two posture conditions:
 
-Each movement was repeated 30 times under each posture condition.
+- **Static condition:** elbow fixed on a desk
+- **Free condition:** elbow not fixed
 
-## Data Structure
+Eight upper limb movements were performed:
 
-The data files are stored in the `data` directory.
+| Label | Movement |
+|---|---|
+| CH | Hand Close |
+| OH | Hand Open |
+| WF | Wrist Flexion |
+| WE | Wrist Extension |
+| PRO | Forearm Pronation |
+| SUP | Forearm Supination |
+| EF | Elbow Flexion |
+| EE | Elbow Extension |
 
-```text
-Hand_Gesture_Classification/
-├── data/
-├── .gitignore
-└── README.md
+---
 
+## Repository Structure
 
-Data Acquisition
+    Hand_Gesture_Classification/
+    ├── data/
+    │   ├── CH1_a.csv
+    │   ├── CH1_b.csv
+    │   ├── CH1_c.csv
+    │   ├── ...
+    │   └── ...
+    ├── .gitignore
+    └── README.md
 
-sEMG signals were recorded using a five-channel upper-arm configuration at a sampling frequency of 1000 Hz.
+---
 
-The collected signals were used for signal preprocessing, movement interval segmentation, sliding-window-based data segmentation, time-domain feature extraction, and machine learning-based classification.
+## File Naming Rule
 
-Related Publication
+The data files are named according to the following format:
 
-This repository is associated with the following manuscript:
+    CH[channel number]_[movement label].csv
 
-Daehui Kim, Junghun Kim, and Sang-Il Choi.
-Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals
+Example:
 
-Usage
+    CH1_a.csv
+    CH1_b.csv
+    CH1_s_a.csv
 
-This dataset is provided for research and academic purposes.
+Files including `_s_` indicate the static condition.
 
-If you use this dataset, please cite the related manuscript.
+---
 
-Contact
+## Data Usage
 
-For questions regarding the dataset, please contact:
+This dataset can be used for research on:
 
-Junghun Kim
-E-mail: fainal2@cu.ac.kr
+- sEMG-based upper limb movement classification
+- hand and wrist gesture recognition
+- upper-arm sEMG signal analysis
+- machine learning-based biosignal classification
 
-Sang-Il Choi
-E-mail: sangilchoi@cu.ac.kr
+---
+
+## Ethical Approval
+
+The data used in this study were collected after obtaining approval from the Institutional Review Board (IRB) of Kyungpook National University Hospital.
+
+All participants provided written informed consent before participating in the experiment.
+
+---
+
+## Citation
+
+If you use this dataset or repository in your research, please cite the following work:
+
+    @article{kim_upperarm_semg_2026,
+      title   = {Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals},
+      author  = {Kim, Daehui and Kim, Junghun and Choi, Sang-Il},
+      journal = {Manuscript in preparation},
+      year    = {2026}
+    }
+
+---
+
+## License
+
+This dataset is released for research and educational purposes only.
+
+Please do not redistribute the data without permission from the authors.
+
+---
+
+## Contact
+
+For questions about this repository, please contact:
+
+**Daehui Kim**  
+Department of Computer Software  
+Daegu Catholic University  
+Republic of Korea
