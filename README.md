@@ -62,7 +62,7 @@ The following eight upper limb movements were performed.
     │   ├── CH1_c.csv
     │   ├── ...
     │   └── ...
-    ├── .gitignore
+    ├── LICENSE
     └── README.md
 
 ---
