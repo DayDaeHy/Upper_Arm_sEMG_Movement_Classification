@@ -2,7 +2,7 @@
 
 ## Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals
 
-**Daehui Kim¹, Junghun Kim²\*,*, Sang-Il Choi²\*,***
+**Daehui Kim¹, Junghun Kim²\**, Sang-Il Choi²\*,***
 
 ¹ Department of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
 ² School of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
