@@ -1,8 +1,8 @@
-# Hand_Gesture_Classification
+# Upper-Arm sEMG-Based Upper Limb Movement Classification
 
 ## Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals
 
-**Daehui Kim¹, Junghun Kim²,*, Sang-Il Choi²,***
+**Daehui Kim¹, Junghun Kim²\*,*, Sang-Il Choi²\*,***
 
 ¹ Department of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
 ² School of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
@@ -13,7 +13,7 @@
 
 ## Overview
 
-This repository provides upper-arm surface electromyography (sEMG) data collected during various upper limb movements.
+This repository provides surface electromyography (sEMG) data recorded from upper-arm muscles during various upper limb movements.
 
 The dataset was constructed to evaluate the feasibility of classifying elbow, forearm, wrist, and hand movements using only multichannel upper-arm sEMG signals.
 
@@ -21,7 +21,7 @@ The dataset was constructed to evaluate the feasibility of classifying elbow, fo
 
 ## Dataset Description
 
-sEMG signals were recorded from five upper-arm muscle sites:
+sEMG signals were recorded from five upper-arm muscle sites.
 
 | Channel | Muscle |
 |---|---|
@@ -33,12 +33,12 @@ sEMG signals were recorded from five upper-arm muscle sites:
 
 The signals were collected at a sampling frequency of **1000 Hz**.
 
-The experiment included two posture conditions:
+The experiment was conducted under two posture conditions.
 
 - **Static condition:** elbow fixed on a desk
 - **Free condition:** elbow not fixed
 
-Eight upper limb movements were performed:
+The following eight upper limb movements were performed.
 
 | Label | Movement |
 |---|---|
@@ -69,17 +69,17 @@ Eight upper limb movements were performed:
 
 ## File Naming Rule
 
-The data files are named according to the following format:
+The data files are named according to the following format.
 
     CH[channel number]_[movement label].csv
 
-Example:
+Examples:
 
     CH1_a.csv
     CH1_b.csv
     CH1_s_a.csv
 
-Files including `_s_` indicate the static condition.
+Files containing `_s_` indicate data collected under the **free condition**.
 
 ---
 
@@ -91,43 +91,32 @@ This dataset can be used for research on:
 - hand and wrist gesture recognition
 - upper-arm sEMG signal analysis
 - machine learning-based biosignal classification
+- comparison of sEMG classification performance under different posture conditions
 
 ---
 
-## Ethical Approval
+## Ethics Statement
 
-The data used in this study were collected after obtaining approval from the Institutional Review Board (IRB) of Kyungpook National University Hospital.
-
-All participants provided written informed consent before participating in the experiment.
+This dataset was collected after Institutional Review Board (IRB) approval and written informed consent from all participants.
 
 ---
 
 ## Citation
 
-If you use this dataset or repository in your research, please cite the following work:
-
-    @article{kim_upperarm_semg_2026,
-      title   = {Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals},
-      author  = {Kim, Daehui and Kim, Junghun and Choi, Sang-Il},
-      journal = {Manuscript in preparation},
-      year    = {2026}
-    }
+If you use this dataset or repository in your research, please cite the related paper.
 
 ---
 
 ## License
 
-This dataset is released for research and educational purposes only.
+This dataset is provided for research and educational purposes only.
 
-Please do not redistribute the data without permission from the authors.
+Redistribution or commercial use of the data without permission from the authors is prohibited.
 
 ---
 
 ## Contact
 
-For questions about this repository, please contact:
+For questions regarding this repository, please contact the email below.
 
-**Daehui Kim**  
-Department of Computer Software  
-Daegu Catholic University  
-Republic of Korea
+**eogml7732@gmail.com**
