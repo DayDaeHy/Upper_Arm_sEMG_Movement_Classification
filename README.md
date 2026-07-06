@@ -1,4 +1,4 @@
-# Upper-Arm sEMG-Based Upper Limb Movement Classification
+# Upper_Arm_sEMG_Movement_Classification
 
 ## Evaluation of the Feasibility of Classifying Various Upper Limb Movements Using Multichannel Upper-Arm sEMG Signals
 
@@ -7,7 +7,7 @@
 ¹ Department of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
 ² School of Computer Software, Daegu Catholic University, Gyeongsangbuk-do, 38430, Republic of Korea  
 
-*Corresponding authors: fainal2@cu.ac.kr; sangilchoi@cu.ac.kr*
+\* Corresponding authors: fainal2@cu.ac.kr; sangilchoi@cu.ac.kr
 
 ---
 
@@ -71,15 +71,30 @@ The following eight upper limb movements were performed.
 
 The data files are named according to the following format.
 
-    CH[channel number]_[movement label].csv
+    [movement label][trial number]_[participant label].csv
+    [movement label][trial number]_s_[participant label].csv
 
 Examples:
 
     CH1_a.csv
-    CH1_b.csv
     CH1_s_a.csv
+    CH2_a.csv
+    CH2_s_a.csv
 
-Files containing `_s_` indicate data collected under the **free condition**.
+The file name consists of the movement label, trial number, posture condition, and participant label.
+
+- `CH`, `OH`, `WF`, `WE`, `PRO`, `SUP`, `EF`, and `EE` indicate the movement labels.
+- The number after the movement label indicates the trial session number.
+- Files without `_s_` indicate data collected under the **static condition**.
+- Files containing `_s_` indicate data collected under the **free condition**.
+- The final alphabetic label indicates the participant.
+
+For example:
+
+- `CH1_a.csv` indicates data from participant `a`, collected during the 1st trial session of the hand close movement under the static condition.
+- `CH1_s_a.csv` indicates data from participant `a`, collected during the 1st trial session of the hand close movement under the free condition.
+
+Each movement was recorded for three trial sessions.
 
 ---
 
